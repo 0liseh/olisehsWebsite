@@ -1,5 +1,9 @@
-import styled from "styled-components"
+import { NavBarContainer } from "../../styles/NavBar/NavBar.styles"
 
-export const NavBar = styled.div`
-    width:100%;
-`;
+export const NavBar = (): JSX.Element => {
+    return(
+        <NavBarContainer>
+            This is the NavBar
+        </NavBarContainer>
+    )
+}
