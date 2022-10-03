@@ -6,9 +6,12 @@ const App = (): JSX.Element => {
   return (
     <>
       <GlobalStyles />
-        <BrowserRouter>
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/about"/>
+          <Route path="/contact"/>
+          <Route path="/projects"/>
         </Routes>
       </BrowserRouter>
     </>
