@@ -1,8 +1,11 @@
 .App { 
-    text-align: center
+    text-align: center;
+    margin: 0 auto;
+    max-width:400px;
+    background:red;
 }
 
 body{
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    max-width:400px;
 }

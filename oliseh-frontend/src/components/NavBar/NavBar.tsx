@@ -1,18 +1,25 @@
+import { useState } from "react"
 import { 
         LeftContainer, 
         NavBarContainer, 
         NavBarLink, 
         NavBarLinksContainer, 
         RightContainer,
-        MobileMenuBar
+        MobileMenu,
+        NameAndLogo,
 } from "../../styles/NavBar/NavBar.styles"
 
 export const NavBar = (): JSX.Element => {
+    const [mobileMenuClicked, setMenuButton] = useState(false);
+
     return(
         <NavBarContainer>
             <LeftContainer>
-                <h1 style={{marginLeft:"20px"}}>Oliseh C</h1>
+                <NameAndLogo>
+                    OlisehC
+                </NameAndLogo>
             </LeftContainer>
+
             <RightContainer>
                 <NavBarLinksContainer>
                     <NavBarLink to={"/"}>Home</NavBarLink>
@@ -21,7 +28,14 @@ export const NavBar = (): JSX.Element => {
                     <NavBarLink to={"/projects"}>Projects</NavBarLink>
                     <NavBarLink to={"/credentials"}>Credentials</NavBarLink>
 
-                    <MobileMenuBar> &#8801;</MobileMenuBar>
+                    <MobileMenu 
+                        onClick={()=>{
+                            setMenuButton((curr)=>!curr);
+                        }}
+                    > 
+                        {/*This is the html unicode for a hamburger menu(rhs) and x icon(lhs)*/}
+                        {mobileMenuClicked ? <>&#10005;</>: <>&#8801;</> } 
+                    </MobileMenu>
                 </NavBarLinksContainer>
             </RightContainer>
         </NavBarContainer>

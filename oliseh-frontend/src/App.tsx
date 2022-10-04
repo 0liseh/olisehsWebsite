@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
-import { GlobalStyles } from "./styles/NavBar/GlobasStyles/GlobalStyles";
+import { GlobalStyles } from "./styles/GlobasStyles/GlobalStyles";
 import { Footer } from './components/Footer/Footer';
 import { NavBar } from './components/NavBar/NavBar';
 import { AboutPage } from './pages/AboutPage/AboutPage';
@@ -7,7 +7,7 @@ import { HomePage } from './pages/HomePage/HomePage';
 
 const App = (): JSX.Element => {
   return (
-    <>
+    <div className="App">
       <GlobalStyles />
       <BrowserRouter>
         <NavBar/> {/*Every single page will include a navbar and the routes below*/}
@@ -20,7 +20,7 @@ const App = (): JSX.Element => {
         </Routes>
         <Footer/>
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 

@@ -1,7 +1,9 @@
+import { FooterContainer, FooterContent } from "../../styles/Footer/Footer.styles"
+
 export const Footer = () =>{
     return(
-        <div style={{borderStyle:"solid"}}>
-            This is the Footer
-        </div>
+        <FooterContainer>
+            
+        </FooterContainer>
     )
 }
