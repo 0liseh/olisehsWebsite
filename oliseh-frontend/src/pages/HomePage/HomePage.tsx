@@ -1,9 +1,7 @@
-import Background from "./images/HomeBackground.jpg";
-
 const HomePageContent = (): JSX.Element => {
     return(
         <div>
-          <img src="./images/LaptopScreens.jpg" height="450px" width="100%"/>
+          <img src="./images/LaptopScreens.jpg" alt="Background screen" height="450px" width="100%"/>
         </div>
     )
 }
