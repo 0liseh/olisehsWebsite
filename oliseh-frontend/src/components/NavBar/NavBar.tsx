@@ -16,7 +16,7 @@ export const NavBar = (): JSX.Element => {
         <NavBarContainer>
             <LeftContainer>
                 <NameAndLogo>
-                    OlisehC
+                    Oliseh C
                 </NameAndLogo>
             </LeftContainer>
 
