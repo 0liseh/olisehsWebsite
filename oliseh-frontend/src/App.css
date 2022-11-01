@@ -1,11 +1,4 @@
-.App { 
-    text-align: center;
-    margin: 0 auto;
-    max-width:400px;
-    background:red;
-}
-
-body{
-    margin: 0 auto;
-    max-width:400px;
+.App {
+  text-align: center;
+  margin: "0 auto";
 }
